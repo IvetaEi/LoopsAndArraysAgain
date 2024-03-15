@@ -173,19 +173,56 @@ public class Main {
         System.out.println("------------8 uzduotis--------------");
 
         int count = 0;
-        for (int i = 0; i < 20; i++) {
-            if (i % 10 == 0){
+        for (int i = 0; i < 21; i++) {
+            if (i == 0){
+                continue;
+            }
+            if (i % 2 == 0){
                 count++;
             }
         }
         System.out.println(count);
 
+        System.out.println("------------9 uzduotis--------------");
+
+        int count1 = 0;
+        for (int i = 0; i < plants.length; i++) {
+            if (i < 5){
+                count1++;
+            }
+        }
+        System.out.println("Yra " + count1 + " zodziai(iu), kurie turi maziau nei 5 raides");
+
+        int count2 = 0;
+        for (int i = 0; i < plants.length; i++) {
+            if (i > 7){
+                count2++;
+            }
+        }
+        System.out.println("Yra " + count2 + " zodziai(iu), kurie turi daugiau nei 7 raides");
+
+        System.out.println("------------10 uzduotis--------------");
+
+        int count3 = 0;
+        for (int i = 0; i < plants.length; i++) {
+            if (i < 10 && i > 5){
+                count3++;
+            }
+        }
+        System.out.println("Yra " + count3 + " zodziai(iu), kurie turi daugiau nei 5 raides, bet maziau nei 10 raidziu");
 
 
-
-
-
-
+//        String[] plants = new String[10];
+//        plants[0] = "Klevas";
+//        plants[1] = "Tulpe";
+//        plants[2] = "Orchideja";
+//        plants[3] = "Obelis";
+//        plants[4] = "Azuolas";
+//        plants[5] = "Liepa";
+//        plants[6] = "Gluosnis";
+//        plants[7] = "Tuja";
+//        plants[8] = "Roze";
+//        plants[9] = "Rododendras";
 
     }
 }
