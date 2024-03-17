@@ -117,7 +117,7 @@ public class Main {
 //             System.out.println("Hiiii");
 //         }while(false);//do while pirma padaro ir tik po to tikrina
 
-
+        System.out.println("------------ Lengvesni --------------");
         System.out.println("------------1 uzduotis--------------");
 
         for (int i = 0; i < 10; i++) {
@@ -187,16 +187,26 @@ public class Main {
 
         int count1 = 0;
         for (int i = 0; i < plants.length; i++) {
-            if (i < 5){
+            if (plants[i].length() < 5){
+                System.out.println("+ " + plants[i] + " " + plants[i].length());
+
                 count1++;
+            }else{
+                System.out.println("- " + plants[i] + " " + plants[i].length());
             }
         }
         System.out.println("Yra " + count1 + " zodziai(iu), kurie turi maziau nei 5 raides");
 
+        System.out.println("-------------------------------------");
+
+
         int count2 = 0;
         for (int i = 0; i < plants.length; i++) {
-            if (i > 7){
+            if (plants[i].length() > 7){
+                System.out.println("+ " + plants[i] + " " + plants[i].length());
                 count2++;
+            }else{
+                System.out.println("- " + plants[i] + " " + plants[i].length());
             }
         }
         System.out.println("Yra " + count2 + " zodziai(iu), kurie turi daugiau nei 7 raides");
@@ -205,24 +215,54 @@ public class Main {
 
         int count3 = 0;
         for (int i = 0; i < plants.length; i++) {
-            if (i < 10 && i > 5){
+            if (plants[i].length() < 10 && plants[i].length() > 5){
+                System.out.println("+ " + plants[i] + " " + plants[i].length());
                 count3++;
+            }else{
+                System.out.println("- " + plants[i] + " " + plants[i].length());
             }
         }
         System.out.println("Yra " + count3 + " zodziai(iu), kurie turi daugiau nei 5 raides, bet maziau nei 10 raidziu");
 
+        System.out.println("------------------------------------");
+        System.out.println("------------ Sunkesni --------------");
+        System.out.println("----------- 1 uzduotis -------------");
 
-//        String[] plants = new String[10];
-//        plants[0] = "Klevas";
-//        plants[1] = "Tulpe";
-//        plants[2] = "Orchideja";
-//        plants[3] = "Obelis";
-//        plants[4] = "Azuolas";
-//        plants[5] = "Liepa";
-//        plants[6] = "Gluosnis";
-//        plants[7] = "Tuja";
-//        plants[8] = "Roze";
-//        plants[9] = "Rododendras";
+        int count4 = 0;
+        for (int i = 0; i < 299; i++) {
+            int randomNum = (int) Math.round(Math.random() * 300);
+            if (randomNum > 150){
+                count4++;
+            }
+
+            if (randomNum > 275) {
+                System.out.print("[" + randomNum + "]" + " ");
+
+            }else{
+                System.out.print(randomNum + " ");
+            }
+        }
+        System.out.println("\n" + "Tarp atsitiktiniu skaiciu yra " + count4 + " skaiciu, kurie didesni uz 150");
+
+        System.out.println("----------- 2 uzduotis -------------");
+
+        for (int i = 1; i <= 3000 ; i++) {
+           if ((i % 77) == 0){
+
+            }
+            System.out.print(i + ", ");
+        }
+
+
+
+
+
+
+
+
+
+
+
 
     }
 }
