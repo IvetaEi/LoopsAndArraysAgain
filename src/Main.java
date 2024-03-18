@@ -1,3 +1,5 @@
+import com.sun.source.tree.WhileLoopTree;
+
 public class Main {
     public static <T> void main(String[] args) {
 
@@ -378,6 +380,8 @@ public class Main {
                 count6++;
             } else {
                 System.out.println("S");
+                count6++;
+                count6 = 0;
             }
 
                 if (count6 == 3) {
@@ -388,14 +392,36 @@ public class Main {
                 }
         }
 
+        System.out.println("\n" + "----------- 6 uzduotis -------------");
+        while (true){
+            for (int P = 10; P <= 25; P++) {
 
-//        }
-//        for (int i = 0; i < 1; i++) {
-//            if (SorH == 1){
-//                break;
-//            }
-//            System.out.println("a) iskrito pirmasis herbas, stabdome metima");
-//        }
+            }
+        }
+
+
+
+
+        int min1 = 10;
+        int max1 = 20;
+        int player1 = (int) (min1 + Math.round(Math.random() * (max1 - min1) ));
+
+        int min2 = 5;
+        int max2 = 25;
+        int player2 = (int) (min2 + Math.round(Math.random() * (max2 - min2) ));
+
+        System.out.print("Petras surinko " + player1 + " tasku(us), o Kazys surinko " + player2 + " tasku(us). ");
+
+        if (player1 > player2){
+            System.out.println("Partiją laimėjo: Petras");
+        }else{
+            System.out.println("Partiją laimėjo: Kazys");
+        }
+
+        System.out.println("\n" + "----------- 7 uzduotis -------------");
+
+
+
 
 
 
