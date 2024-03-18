@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static <T> void main(String[] args) {
 
 
 //        //ciklai:
@@ -162,7 +162,7 @@ public class Main {
 
         for (int i = 10; i < 51; i++) {
             //jei dalinasi is 10 continue?
-            if (i % 10 == 0){
+            if (i % 10 == 0){//liekana lygi 0
                 continue;
             }
             if (i % 2 == 0) {
@@ -246,17 +246,156 @@ public class Main {
 
         System.out.println("----------- 2 uzduotis -------------");
 
+        String result = "";
         for (int i = 1; i <= 3000 ; i++) {
-           if ((i % 77) == 0){
-
+            if ((i % 77) == 0) {
+                result+= i + ",";
             }
-            System.out.print(i + ", ");
+
+        }
+        System.out.print(result.substring(0, result.length() -1));
+
+
+
+
+//        for (int i = 1; i <= 3000 ; i++) {
+//            if (i == 3000 / 77 * 77) {
+//                System.out.print(i + ", ");
+//                continue;
+//            }
+//            if (i % 77 == 0){
+//                System.out.println(i + ", ");
+//            }
+//
+//        }
+
+//        result = "";
+//        for (int i = 77; i <= 3000 ; i+= 77) {
+//            result += i + ", ";
+//        }
+
+//        int amountToPrint = 0;
+//        int amountPrinted = 0;
+//        for (int i = 1; i <= 3000 ; i++) {
+//           if ((i % 77) == 0){
+//               amountToPrint++;
+//            }
+//            for (int i = 1; i <= 3000 ; i++) {
+//                if ((i % 77) == 0){
+//                    if (amountPrinted < amountToPrint--){
+//                        System.out.println(i + ", ");
+//                        amountPrinted++;
+//                    }else{
+//                        System.out.println(i);
+//                    }
+//                }
+//
+//        }
+
+
+        System.out.println("\n" + "----------- 3 uzduotis -------------");
+
+        for (int x = 0; x < 26; x++) {
+            for (int y = 0; y < 26; y++) {
+                if (y == y*25){
+                    System.out.print(System.lineSeparator());
+
+                }else{
+                    System.out.print("* ");
+
+                }
+            }
+
+        }
+
+        System.out.println("\n" + "----------- 4 uzduotis -------------");
+//        for (int x = 0; x < 25; x++) {
+//            for (int y = 0; y < 25; y++) {
+//                if (y == y * 25) {
+//                    System.out.print(System.lineSeparator());
+//                } else if (y == x) {
+//                    System.out.print("V ");
+//                } else {
+//                    System.out.print("* ");
+//                }
+//
+//            }
+//        }
+        for (int i = 0; i < 25; i++) {
+            for (int j = 0; j < 25; j++) {
+                if ( i == j || i + j == (25 - 1)) {
+                    System.out.print("V ");
+                } else {
+                    System.out.print("* ");
+                }
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n" + "----------- 5 uzduotis -------------");
+        System.out.println(">>> a)");
+
+        while (true) {
+            int SorH = (int) Math.round(Math.random() * 1);
+            if (SorH == 0){
+                System.out.println("H");
+            }else{
+                System.out.println("S");}
+
+            if (SorH == 0) {
+                System.out.println("iskrito herbas, metima stabdome");
+                break;
+            } else {
+                continue;
+            }
+        }
+        System.out.println(">>> b)");
+
+        int count5 = 0;
+        while(true) {
+            int SorH = (int) Math.round(Math.random() * 1);
+            if (SorH == 0) {
+                System.out.println("H");
+                count5++;
+            } else {
+                System.out.println("S");
+            }
+
+                if (count5 == 3) {
+                    System.out.println("3 kartus iskrito herbas, metima stabdome");
+                    break;
+                } else {
+                    continue;
+                }
+            }
+        System.out.println(">>> c)");
+
+        int count6 = 0;
+        while(true) {
+            int SorH = (int) Math.round(Math.random() * 1);
+            if (SorH == 0) {
+                System.out.println("H");
+                count6++;
+            } else {
+                System.out.println("S");
+            }
+
+                if (count6 == 3) {
+                    System.out.println("3 kartus is eiles iskrito herbas, metima stabdome");
+                    break;
+                } else {
+                    continue;
+                }
         }
 
 
-
-
-
+//        }
+//        for (int i = 0; i < 1; i++) {
+//            if (SorH == 1){
+//                break;
+//            }
+//            System.out.println("a) iskrito pirmasis herbas, stabdome metima");
+//        }
 
 
 
